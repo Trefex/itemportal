@@ -45,3 +45,6 @@ end
 
 # Sass for CSS
 gem 'bootstrap-sass'
+
+# Web server instead of Webrick
+gem 'passenger'
