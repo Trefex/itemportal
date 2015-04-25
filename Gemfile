@@ -48,3 +48,6 @@ gem 'bootstrap-sass'
 
 # Web server instead of Webrick
 gem 'passenger'
+
+# Handle image uploads
+gem "paperclip"
