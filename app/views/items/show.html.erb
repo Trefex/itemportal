@@ -1,0 +1,19 @@
+
+<p>
+  <%= image_tag @item.trainimage.url %> <br/>
+  <%= image_tag @item.trainimage.url(:medium) %> <br/>
+  <%= image_tag @item.trainimage.url(:thumb) %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @item.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @item.text %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

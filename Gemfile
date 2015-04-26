@@ -51,3 +51,11 @@ gem 'passenger'
 
 # Handle image uploads
 gem "paperclip"
+
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+
+# Icons from Font Awesome.
+gem "font-awesome-rails"
+
+# Pagination
+gem 'kaminari'

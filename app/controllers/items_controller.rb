@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   http_basic_authenticate_with name: "trefex", password: "trefex", except: [:index, :show]
 
   def index
-    @items = Item.all
+    @items = Item.all.page params[:page]
   end
 
   # Show action
@@ -46,12 +46,15 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @item.destroy
 
+    #@item.avatar = nil
+    #@item.save
+
     redirect_to items_path
   end
 
   private
     def item_params
-      params. require(:item).permit(:title, :text)
+      params. require(:item).permit(:title, :text, :trainimage)
   end
 
 end
