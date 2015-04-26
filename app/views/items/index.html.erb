@@ -1,25 +1,26 @@
-<div class="page-header">
-  <h1>Listing train items</h1>
+<div class="text-center">
+<%= paginate @items %>
 </div>
-
-<%= link_to 'New item', new_item_path, :class => "btn btn-primary" %>
-
 <p></p>
 
 <table class="table">
   <% @items.each do |item| %>
     <tr>
-      <td><%= image_tag item.trainimage.url(:thumb) %></td>
-      <td><%= item.title %></td>
-      <td><%= item.text %></td>
-      <td><%= link_to 'Show', item_path(item) %></td>
-      <td><%= link_to 'Edit', edit_item_path(item) %></td>
-      <td>
-        <%= link_to (fa_icon "trash-o"), item_path(item),
+      <td class="col-md-3"><%= image_tag item.trainimage.url(:thumb) %></td>
+      <td class="col-md-3"><%= item.title %></td>
+      <td class="col-md-3"><%= item.text %></td>
+      <td class="col-md-1"><%= link_to (fa_icon "eye"), item_path(item) %></td>
+      <td class="col-md-1"><%= link_to (fa_icon "pencil"), edit_item_path(item) %></td>
+      <td class="col-md-1">
+        <%= link_to (fa_icon "trash-o"),  item_path(item),
               method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+              data: { confirm: 'Are you sure?' } %>
+      </td>
     </tr>
   <% end %>
 </table>
 
-<%= paginate @items %>
+<div class="text-center">
+<%= paginate @items %> <br/>
+<%= page_entries_info @items %>
+</div>
