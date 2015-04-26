@@ -1,6 +1,9 @@
 class ItemsController < ApplicationController
 
-  http_basic_authenticate_with name: "trefex", password: "trefex", except: [:index, :show]
+  #http_basic_authenticate_with name: USER_ID, password: PASSWORD, except: [:index, :show]
+  #before_filter :authenticate, :except => [:index, :show]
+
+  before_action :authenticate_user!, :except => [:show, :index, :search]
 
   def index
     @items = Item.all.page params[:page]
@@ -50,6 +53,21 @@ class ItemsController < ApplicationController
     #@item.save
 
     redirect_to items_path
+  end
+
+  # GET /books/search
+  # GET /books/search.xml
+  def search
+    @items = Item.search do
+      keywords params[:query]
+    end.results
+
+    render 'index'
+
+    # respond_to do |format|
+    #   format.html { render :action => "index" }
+    #   format.xml  { render :xml => @books }
+    # end
   end
 
   private

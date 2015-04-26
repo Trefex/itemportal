@@ -21,6 +21,52 @@ bundle install
 passenger start
 ```
 
+## Starting solr
+
+In production, use a standalone solr server (check how to configure it).
+
+For development, use the gem sunspot_solr
+
+```
+bundle exec rake sunspot:solr:run
+```
+
+to start it in the foreground.
+
+```
+bundle exec rake sunspot:solr:start
+```
+
+to start it in the background.
+
+The admin portal can be found at: `http://localhost:8982/solr/#/``
+
+## Managing commands
+
+Re-index solr indexes
+
+```
+bundle exec rake sunspot:reindex
+```
+
+Re-generate thumbnails
+
+```
+rake paperclip:refresh:missing_styles && rake paperclip:refresh CLASS=Item
+```
+
+Recompile assets
+
+```
+rake assets:precompile
+```
+
+Migrate database
+
+```
+rake db:migrate
+```
+
 ## License
 
 This code is release under GPL license. Please see the licnese file attached to this repository.

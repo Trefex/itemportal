@@ -1,5 +1,10 @@
 class Item < ActiveRecord::Base
 
+  searchable do
+    text :title, :text
+  end
+
+
   validates :title, presence: true,
                     length: { minimum: 5 }
 

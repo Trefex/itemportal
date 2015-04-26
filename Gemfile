@@ -60,6 +60,16 @@ gem "font-awesome-rails"
 # Pagination
 gem 'kaminari'
 
+# PRogress bar
+gem 'progress_bar'
+
 # Search using solr
 gem 'sunspot_rails'
 #gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
+
+group :development do
+  gem 'sunspot_solr'
+end
+
+# Authentication
+gem 'devise'
