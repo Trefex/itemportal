@@ -34,15 +34,16 @@
           </ul>
         </li>-->
       </ul>
+      <ul class="nav navbar-nav navbar-right">
       <%= form_tag search_items_path, {:method => :get, :class => "navbar-form navbar-left", :role => "search"} do %>
       <div class="form-group">
         <%= text_field_tag :query, params[:query], {:class => "form-control", :placeholder => "Search"} %>
-      </div>
+
         <%= submit_tag "Search", :class => "btn btn-primary" %>
-      </p>
+        </div>
       <% end %>
 
-      <ul class="nav navbar-nav navbar-right">
+
         <% if user_signed_in? %>
           <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
         <% else %>
