@@ -6,7 +6,12 @@
 <table class="table">
   <% @items.each do |item| %>
     <tr>
-      <td class="col-md-3"><%= image_tag item.trainimage.url(:thumb) %></td>
+      <td class="col-md-3">
+        <%= link_to image_tag(item.trainimage.url(:thumb)),
+                      item.trainimage.url(:original),
+                      {"data-lightbox" => item.trainimage.exists? ? item.trainimage_file_name : "Default image", 
+                        "data-title" => item.title} %>
+      </td>
       <td class="col-md-3"><%= item.title %></td>
       <td class="col-md-3"><%= item.text %></td>
       <td class="col-md-1"><%= link_to (fa_icon "eye"), item_path(item) %></td>
