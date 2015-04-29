@@ -1,3 +1,7 @@
+[![Code Climate](https://codeclimate.com/github/Trefex/trainsportal/badges/gpa.svg)](https://codeclimate.com/github/Trefex/trainsportal)
+[![Build Status](https://travis-ci.org/Trefex/trainsportal.svg)](https://travis-ci.org/Trefex/trainsportal)
+
+
 # Train portal
 
 This portal is a Ruby on Rails application using Bootstrap 3, Google Open Fonts and FontAwesome.
@@ -5,7 +9,7 @@ It is fully RESTful.
 
 ## Pre-requisites
 
-This app was tested and developed on Ruby 2.2.1p85, rake 10.4.2, and rvm 1.26.11.
+This app was tested and developed on Ruby 2.2.1p85, rake 10.4.2, Rails 4.2.1 and rvm 1.26.11.
 
 ## Installation
 
