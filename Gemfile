@@ -60,7 +60,7 @@ gem "font-awesome-rails"
 # Pagination
 gem 'kaminari'
 
-# PRogress bar
+# Progress bar
 gem 'progress_bar'
 
 # Search using solr
@@ -74,4 +74,8 @@ end
 # Authentication
 gem 'devise'
 
+# Add rake for Travis CI
 gem 'rake'
+
+# Asset pipeline compatible lightbox gem
+gem 'lightbox2-rails'
