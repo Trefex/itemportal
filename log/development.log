@@ -29342,3 +29342,449 @@ Processing by ItemsController#index as HTML
   Rendered items/index.html.erb within layouts/application (22.7ms)
   Rendered layouts/_header.html.erb (4.3ms)
 Completed 200 OK in 159ms (Views: 157.8ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[32mSOLR Request (2.9ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[32mSOLR Request (131.7ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items"  ORDER BY "items"."id" ASC LIMIT 50
+[2015-04-29 22:59:37 +0200] Start Indexing
+  [1m[32mSOLR Request (26.1ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+[2015-04-29 22:59:37 +0200] Completed Indexing. Rows indexed 50. Rows/sec: 1756.4197140548706 (Elapsed: 0.028467 sec.)
+  [1m[32mSOLR Request (62.4ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+
+
+Started GET "/items/4" for 127.0.0.1 at 2015-04-29 23:07:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"4"}
+Started HEAD "/" for 127.0.0.1 at 2015-04-29 23:07:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 4]]
+Processing by ItemsController#index as HTML
+  Rendered items/show.html.erb within layouts/application (4.6ms)
+
+
+Started GET "/items/4" for 127.0.0.1 at 2015-04-29 23:07:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" LIMIT 2 OFFSET 0[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered items/show.html.erb within layouts/application (4.4ms)
+  Rendered items/index.html.erb within layouts/application (167.6ms)
+  Rendered layouts/_header.html.erb (12.1ms)
+Completed 200 OK in 466ms (Views: 433.7ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+  Rendered layouts/_header.html.erb (12.6ms)
+Completed 200 OK in 447ms (Views: 431.9ms | ActiveRecord: 0.5ms | Solr: 0.0ms)
+  Rendered layouts/_header.html.erb (12.0ms)
+Completed 200 OK in 407ms (Views: 374.2ms | ActiveRecord: 0.5ms | Solr: 0.0ms)
+
+
+
+
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+Started GET "/assets/application.self-72d1373feaa39e7d43f7beb5e43539ca7baa71c59e919ac4960f9bb1d9b98952.css?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootbox_custom.self-dad44a894ed1763d4551b5fd83ff5a4e22defde72c07104548da61a06267086a.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/bootbox.self-b5ca8f60fcb153e16cbf9b1576f9f12d827b26af705a98b8b7065bb59d2e6d8f.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+Started GET "/assets/lightbox.self-f3e494674fee4e28f62f64266d717337c054a70fb5ff90b729849d7611f7ae0a.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+
+
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-04-29 23:07:43 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/items" for 127.0.0.1 at 2015-04-29 23:07:51 +0200
+Processing by ItemsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 0
+  Rendered items/index.html.erb within layouts/application (35.7ms)
+  Rendered layouts/_header.html.erb (9.7ms)
+Completed 200 OK in 255ms (Views: 253.7ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/items/4/edit" for 127.0.0.1 at 2015-04-29 23:07:54 +0200
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"4"}
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-29 23:07:54 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+Completed 200 OK in 168ms (Views: 159.7ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started DELETE "/items/4" for 127.0.0.1 at 2015-04-29 23:08:01 +0200
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ps95eH6TgMQiL6lgYpoabgD+LNrBDg++iLtQFQZwk88hc2+xlt7CMdS1Qyc++JFG5Kx7q4WS0xu/uxE6rr6J7w==", "id"=>"4"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-29 23:08:01 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+Completed 200 OK in 142ms (Views: 141.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2015-04-29 23:08:04 +0200
+Processing by ItemsController#new as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-29 23:08:04 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+Completed 200 OK in 149ms (Views: 148.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-29 23:08:07 +0200
+Processing by ItemsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 0
+  Rendered items/index.html.erb within layouts/application (19.5ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+Completed 200 OK in 157ms (Views: 156.1ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/items/search?utf8=%E2%9C%93&query=123&commit=Search" for 127.0.0.1 at 2015-04-29 23:08:13 +0200
+Processing by ItemsController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"123", "commit"=>"Search"}
+  [1m[32mSOLR Request (23.6ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Item"][0m, q: [1m[1m"123"[0m, fl: [1m[1m"* score"[0m, qf: [1m[1m"title_text text_text"[0m, defType: [1m[1m"edismax"[0m, start: [1m[1m0[0m, rows: [1m[1m30[0m} ]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 4[0m
+  Rendered items/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+Completed 200 OK in 171ms (Views: 143.2ms | ActiveRecord: 0.1ms | Solr: 23.6ms)
+
+
+Started DELETE "/items/4" for 127.0.0.1 at 2015-04-29 23:08:19 +0200
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZFra+y6rcv2VnxD4CcrRBfjWLCUM6b8eXrjDsCy5f6Tj5swyxuYwCGMF+r9VqFotHIR7VEh1Y7tpuIKfhHdlhA==", "id"=>"4"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-29 23:08:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+Completed 200 OK in 145ms (Views: 143.9ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/items/search?utf8=%E2%9C%93&query=test&commit=Search" for 127.0.0.1 at 2015-04-29 23:08:23 +0200
+Processing by ItemsController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"test", "commit"=>"Search"}
+  [1m[32mSOLR Request (4.6ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Item"][0m, q: [1m[1m"test"[0m, fl: [1m[1m"* score"[0m, qf: [1m[1m"title_text text_text"[0m, defType: [1m[1m"edismax"[0m, start: [1m[1m0[0m, rows: [1m[1m30[0m} ]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" IN (5, 4, 6)
+  Rendered items/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_header.html.erb (6.7ms)
+Completed 200 OK in 165ms (Views: 157.9ms | ActiveRecord: 0.2ms | Solr: 4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-29 23:08:25 +0200
+Processing by ItemsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 0
+  Rendered items/index.html.erb within layouts/application (19.3ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+Completed 200 OK in 161ms (Views: 160.3ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-29 23:08:27 +0200
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"P3wsTpEfm6gGm4a47FaRtrSeKZmIm3bcCNzEXLoUQLC4wDqHeVLZXfABbP+wNBqeUMx+6MwHqnk/3IVzEtpakA=="}
+  Rendered devise/shared/_links.html.erb (0.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+Completed 200 OK in 160ms (Views: 159.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-29 23:08:38 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7D2uv/IUdUVjo9Jdms+zPi45I2HvecGH49fyxhe+GyFrgbh2Glk3sJU5OBrGrTgWymt0EKvlHSLU17Ppv3ABAQ==", "user"=>{"email"=>"trefex@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "trefex@gmail.com"]]
+Completed 401 Unauthorized in 64ms (ActiveRecord: 0.7ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7D2uv/IUdUVjo9Jdms+zPi45I2HvecGH49fyxhe+GyFrgbh2Glk3sJU5OBrGrTgWymt0EKvlHSLU17Ppv3ABAQ==", "user"=>{"email"=>"trefex@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (6.6ms)
+Completed 200 OK in 218ms (Views: 159.1ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-29 23:08:42 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S7BhK7njwcWeLmdlxeSTrMRK4Uj5o0wY/Lf69A2la8TMDHfiUa6DMGi0jSKZhhiEIBi2Ob0/kL3Lt7vbpWtx5A==", "user"=>{"email"=>"trefex@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "trefex@gmail.com"]]
+Completed 401 Unauthorized in 64ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S7BhK7njwcWeLmdlxeSTrMRK4Uj5o0wY/Lf69A2la8TMDHfiUa6DMGi0jSKZhhiEIBi2Ob0/kL3Lt7vbpWtx5A==", "user"=>{"email"=>"trefex@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+Completed 200 OK in 208ms (Views: 146.0ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-29 23:08:45 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yeuKyVl8QokFrG/fSDNBittdv+uhkPW6pv1WncQBX5pOV5wAsTEAfPM2hZgUUcqiPw/omuUMKR+R/ReybM9Fug==", "user"=>{"email"=>"trefex@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "trefex@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-04-26 20:23:13.644055"], ["current_sign_in_at", "2015-04-29 21:08:46.001669"], ["sign_in_count", 7], ["updated_at", "2015-04-29 21:08:46.002668"], ["id", 1]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/items/new
+Completed 302 Found in 78ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2015-04-29 23:08:46 +0200
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered items/_form.html.erb (4.0ms)
+  Rendered items/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (6.3ms)
+Completed 200 OK in 155ms (Views: 153.9ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2015-04-29 23:09:17 +0200
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VX8N/yWQo5Dq0ZSI3XAKS5WnmnrwdsAVk+GpxbyN3stPchIyOkz4TiETjB4xq+ch4KF0hsF2j/0NGNK61v/Esw==", "item"=>{"title"=>"Topolina hello", "text"=>"Hello this is my train", "trainimage"=>#<ActionDispatch::Http::UploadedFile:0x007fc606a46ce8 @tempfile=#<Tempfile:/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/RackMultipart20150429-15899-ls85je.JPG>, @original_filename="IMG_0101.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[trainimage]\"; filename=\"IMG_0101.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Item"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/f3e79b8227501fe0d0901e1b43ff0ff520150429-15899-665hdo.JPG'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/f3e79b8227501fe0d0901e1b43ff0ff520150429-15899-1xudawz.JPG[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/f3e79b8227501fe0d0901e1b43ff0ff520150429-15899-1xudawz.JPG[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/f3e79b8227501fe0d0901e1b43ff0ff520150429-15899-1xudawz.JPG[0]' -auto-orient -resize "780x600" '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/f3e79b8227501fe0d0901e1b43ff0ff520150429-15899-1xudawz20150429-15899-flqze9'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/f3e79b8227501fe0d0901e1b43ff0ff520150429-15899-1xudawz20150429-15899-flqze9'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/ffe265462ff40a1f9eaf9087458e71d720150429-15899-84k2gx[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/ffe265462ff40a1f9eaf9087458e71d720150429-15899-84k2gx[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/ffe265462ff40a1f9eaf9087458e71d720150429-15899-84k2gx[0]' -auto-orient -resize "390x300>" '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/ffe265462ff40a1f9eaf9087458e71d720150429-15899-84k2gx20150429-15899-qfqhtd'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/ffe265462ff40a1f9eaf9087458e71d720150429-15899-84k2gx20150429-15899-qfqhtd'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/ffe265462ff40a1f9eaf9087458e71d720150429-15899-84k2gx[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/ffe265462ff40a1f9eaf9087458e71d720150429-15899-84k2gx[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/ffe265462ff40a1f9eaf9087458e71d720150429-15899-84k2gx[0]' -auto-orient -resize "130x100>" '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/ffe265462ff40a1f9eaf9087458e71d720150429-15899-84k2gx20150429-15899-33nu8v'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/ffe265462ff40a1f9eaf9087458e71d720150429-15899-84k2gx20150429-15899-33nu8v'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/90/3bd801s528s6gh06vkywz65140ddn0/T/f3e79b8227501fe0d0901e1b43ff0ff520150429-15899-1lztu8w.JPG'
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("title", "text", "trainimage_file_name", "trainimage_content_type", "trainimage_file_size", "trainimage_fingerprint", "trainimage_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Topolina hello"], ["text", "Hello this is my train"], ["trainimage_file_name", "IMG_0101.JPG"], ["trainimage_content_type", "image/jpeg"], ["trainimage_file_size", 133256], ["trainimage_fingerprint", "6e861c4a58bc787a906e33105a78eda5"], ["trainimage_updated_at", "2015-04-29 21:09:17.110371"], ["created_at", "2015-04-29 21:09:17.834970"], ["updated_at", "2015-04-29 21:09:17.834970"]]
+  [1m[32mSOLR Request (7.5ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items/8
+  [1m[32mSOLR Request (28.0ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+Completed 302 Found in 792ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/items/8" for 127.0.0.1 at 2015-04-29 23:09:17 +0200
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered items/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (8.2ms)
+Completed 200 OK in 160ms (Views: 158.9ms | ActiveRecord: 0.2ms | Solr: 35.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-29 23:09:22 +0200
+Processing by ItemsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" LIMIT 2 OFFSET 0[0m
+  Rendered items/index.html.erb within layouts/application (24.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (9.1ms)
+Completed 200 OK in 173ms (Views: 172.1ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/items/page/3" for 127.0.0.1 at 2015-04-29 23:09:24 +0200
+Processing by ItemsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 4
+  Rendered items/index.html.erb within layouts/application (17.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (6.4ms)
+Completed 200 OK in 173ms (Views: 172.4ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started GET "/items/8/edit" for 127.0.0.1 at 2015-04-29 23:09:34 +0200
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered items/_form.html.erb (2.4ms)
+  Rendered items/edit.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+Completed 200 OK in 151ms (Views: 149.6ms | ActiveRecord: 0.1ms | Solr: 0.0ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2015-04-29 23:09:37 +0200
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered items/_form.html.erb (1.3ms)
+  Rendered items/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+Completed 200 OK in 149ms (Views: 147.6ms | ActiveRecord: 0.1ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-29 23:09:43 +0200
+Processing by ItemsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 0
+  Rendered items/index.html.erb within layouts/application (21.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (7.5ms)
+Completed 200 OK in 162ms (Views: 161.0ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-04-29 23:09:46 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"v4SNrHEMknaBEOJW814yH47FU0FsP01oyWCh81/ot2yliZJhbtDJqErS+sAfhd91+8O9vV0/AoBXmdqMNZqtFA=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-29 23:09:46 +0200
+Processing by ItemsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 0
+  Rendered items/index.html.erb within layouts/application (21.7ms)
+  Rendered layouts/_header.html.erb (6.7ms)
+Completed 200 OK in 163ms (Views: 162.4ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/items/page/2" for 127.0.0.1 at 2015-04-29 23:09:53 +0200
+Processing by ItemsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 2
+  Rendered items/index.html.erb within layouts/application (21.1ms)
+  Rendered layouts/_header.html.erb (6.9ms)
+Completed 200 OK in 168ms (Views: 167.3ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/items/page/3" for 127.0.0.1 at 2015-04-29 23:09:54 +0200
+Processing by ItemsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 4
+  Rendered items/index.html.erb within layouts/application (21.2ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+Completed 200 OK in 175ms (Views: 174.5ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-29 23:09:55 +0200
+Processing by ItemsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 0
+  Rendered items/index.html.erb within layouts/application (21.1ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+Completed 200 OK in 165ms (Views: 164.1ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/items/page/2" for 127.0.0.1 at 2015-04-29 23:09:58 +0200
+Processing by ItemsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 2
+  Rendered items/index.html.erb within layouts/application (20.8ms)
+  Rendered layouts/_header.html.erb (8.2ms)
+Completed 200 OK in 170ms (Views: 169.6ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-29 23:10:01 +0200
+Processing by ItemsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" LIMIT 2 OFFSET 0
+  Rendered items/index.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_header.html.erb (6.9ms)
+Completed 200 OK in 176ms (Views: 175.2ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started GET "/items/search?utf8=%E2%9C%93&query=topo&commit=Search" for 127.0.0.1 at 2015-04-29 23:10:07 +0200
+Processing by ItemsController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"topo", "commit"=>"Search"}
+  [1m[32mSOLR Request (4.5ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Item"][0m, q: [1m[1m"topo"[0m, fl: [1m[1m"* score"[0m, qf: [1m[1m"title_text text_text"[0m, defType: [1m[1m"edismax"[0m, start: [1m[1m0[0m, rows: [1m[1m30[0m} ]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = 8[0m
+  Rendered items/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (8.1ms)
+Completed 200 OK in 148ms (Views: 141.3ms | ActiveRecord: 0.1ms | Solr: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-29 23:10:10 +0200
+Processing by ItemsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" LIMIT 2 OFFSET 0[0m
+  Rendered items/index.html.erb within layouts/application (24.2ms)
+  Rendered layouts/_header.html.erb (6.3ms)
+Completed 200 OK in 179ms (Views: 178.0ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
