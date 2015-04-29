@@ -73,3 +73,5 @@ end
 
 # Authentication
 gem 'devise'
+
+gem 'rake'
