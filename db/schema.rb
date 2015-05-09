@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150426190657) do
+ActiveRecord::Schema.define(version: 20150509223105) do
 
   create_table "items", force: :cascade do |t|
     t.string   "title"
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 20150426190657) do
     t.integer  "trainimage_file_size"
     t.datetime "trainimage_updated_at"
     t.string   "trainimage_fingerprint"
+    t.string   "sn"
+    t.string   "brand"
+    t.boolean  "inbox"
+    t.string   "scale"
+    t.decimal  "dateval"
+    t.decimal  "sellprice"
+    t.datetime "selldate"
   end
 
   create_table "users", force: :cascade do |t|

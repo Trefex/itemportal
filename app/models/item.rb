@@ -1,7 +1,7 @@
 class Item < ActiveRecord::Base
 
   searchable do
-    text :title, :text
+    text :title, :text, :sn, :brand, :scale, :dateval, :sellprice, :selldate
   end
 
 
