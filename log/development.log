@@ -34247,3 +34247,11 @@ Processing by ItemsController#index as HTML
   [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
   Rendered layouts/_header.html.erb (9.8ms)
 Completed 200 OK in 187ms (Views: 184.1ms | ActiveRecord: 1.7ms | Solr: 0.0ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" LIMIT 1[0m
+  [1m[35mItem Exists (0.1ms)[0m  SELECT  1 AS one FROM "items" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" LIMIT 5 OFFSET 0

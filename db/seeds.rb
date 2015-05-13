@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+User.create!([
+  {email: "trefex@gmail.com", encrypted_password: "$2a$10$iiTXX5ey7Vu7wm1KSq7EM.HTox/q3h07aiSdJU8Hlfxw/OuQ5Qa4W", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: "2015-05-12 19:55:00", sign_in_count: 14, current_sign_in_at: "2015-05-12 20:32:57", last_sign_in_at: "2015-05-12 20:28:59", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"}
+])
+Item.create!([
+  {title: "Test 123", text: "Test image123", trainimage_file_name: "IMG_0001.JPG", trainimage_content_type: "image/jpeg", trainimage_file_size: 183652, trainimage_updated_at: "2015-04-29 19:31:46", trainimage_fingerprint: "a0254c016c681fb350ccbac233da1c1c", sn: nil, brand: nil, inbox: nil, scale: nil, dateval: nil, sellprice: nil, selldate: nil},
+  {title: "Test 3478", text: "test test test", trainimage_file_name: nil, trainimage_content_type: nil, trainimage_file_size: nil, trainimage_updated_at: nil, trainimage_fingerprint: nil, sn: nil, brand: nil, inbox: nil, scale: nil, dateval: nil, sellprice: nil, selldate: nil},
+  {title: "Test train", text: "Who whoooo", trainimage_file_name: "IMG_0077.JPG", trainimage_content_type: "image/jpeg", trainimage_file_size: 262038, trainimage_updated_at: "2015-04-29 19:31:46", trainimage_fingerprint: "f5a11fec826792b8fd5f99424cbbde4a", sn: nil, brand: nil, inbox: nil, scale: nil, dateval: nil, sellprice: nil, selldate: nil},
+  {title: "Trefex", text: "This is a cool thing", trainimage_file_name: "IMG_0069.JPG", trainimage_content_type: "image/jpeg", trainimage_file_size: 123045, trainimage_updated_at: "2015-04-29 19:31:46", trainimage_fingerprint: "49cab37c50de7440831a9c00884d9ac4", sn: nil, brand: nil, inbox: nil, scale: nil, dateval: nil, sellprice: nil, selldate: nil},
+  {title: "Topolina hello", text: "Hello this is my train", trainimage_file_name: "IMG_0101.JPG", trainimage_content_type: "image/jpeg", trainimage_file_size: 133256, trainimage_updated_at: "2015-04-29 21:09:17", trainimage_fingerprint: "6e861c4a58bc787a906e33105a78eda5", sn: nil, brand: nil, inbox: nil, scale: nil, dateval: nil, sellprice: nil, selldate: nil}
+])

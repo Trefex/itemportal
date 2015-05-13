@@ -79,3 +79,6 @@ gem 'rake'
 
 # Asset pipeline compatible lightbox gem
 gem 'lightbox2-rails'
+
+# Allow to create seed from existing DB
+gem 'seed_dump'
