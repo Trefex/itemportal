@@ -1,6 +1,5 @@
-User.create!([
-  {email: "trefex@gmail.com", encrypted_password: "$2a$10$iiTXX5ey7Vu7wm1KSq7EM.HTox/q3h07aiSdJU8Hlfxw/OuQ5Qa4W", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: "2015-05-12 19:55:00", sign_in_count: 14, current_sign_in_at: "2015-05-12 20:32:57", last_sign_in_at: "2015-05-12 20:28:59", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"}
-])
+User.create(:email => 'trefex@gmail.com', :password => 'lcsblcsb', :password_confirmation => 'lcsblcsb', :first_name => 'Christophe', :last_name => 'Trefois')
+
 Item.create!([
   {title: "Test 123", text: "Test image123", trainimage_file_name: "IMG_0001.JPG", trainimage_content_type: "image/jpeg", trainimage_file_size: 183652, trainimage_updated_at: "2015-04-29 19:31:46", trainimage_fingerprint: "a0254c016c681fb350ccbac233da1c1c", sn: nil, brand: nil, inbox: nil, scale: nil, dateval: nil, sellprice: nil, selldate: nil},
   {title: "Test 3478", text: "test test test", trainimage_file_name: nil, trainimage_content_type: nil, trainimage_file_size: nil, trainimage_updated_at: nil, trainimage_fingerprint: nil, sn: nil, brand: nil, inbox: nil, scale: nil, dateval: nil, sellprice: nil, selldate: nil},
