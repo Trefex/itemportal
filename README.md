@@ -71,6 +71,45 @@ Migrate database
 rake db:migrate
 ```
 
+# Production
+
+Install Phusion Passenger with Apache using the following guide:
+
+https://www.phusionpassenger.com/documentation/Users%20guide%20Apache.html#installation
+
+* Compile the Apache module
+
+```
+passenger-install-apache2-module
+```
+
+* Configure vhost
+
+```apache
+<VirtualHost *:80>
+    ServerName trains.trefex.com
+
+    DocumentRoot /home/localadmin/webapps/trainsportal/public
+    RailsEnv production
+    SetEnv SECRET_KEY_BASE secret_key
+    <Directory /home/localadmin/webapps/trainsportal/public>
+        Allow from all
+        Options -MultiViews
+        # Uncomment this if you're on Apache >= 2.4:
+        #Require all granted
+    </Directory>
+</VirtualHost>
+```
+
+* Install solr
+
+```
+curl -O http://ftp.wayne.edu/apache/lucene/solr/5.1.0/solr-5.1.0.tgz
+tar xzf solr-5.1.0.tgz solr-5.1.0/bin/install_solr_service.sh --strip-components=2
+ls
+sudo bash ./install_solr_service.sh solr-5.1.0.tgz
+```
+
 ## License
 
 This code is release under GPL license. Please see the licnese file attached to this repository.
