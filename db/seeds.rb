@@ -1,4 +1,4 @@
-User.create(:email => 'trefex@gmail.com', :password => 'lcsblcsb', :password_confirmation => 'lcsblcsb', :first_name => 'Christophe', :last_name => 'Trefois')
+User.create(:email => 'trefex@gmail.com', :password => 'lcsblcsb', :password_confirmation => 'lcsblcsb')
 
 Item.create!([
   {title: "Test 123", text: "Test image123", trainimage_file_name: "IMG_0001.JPG", trainimage_content_type: "image/jpeg", trainimage_file_size: 183652, trainimage_updated_at: "2015-04-29 19:31:46", trainimage_fingerprint: "a0254c016c681fb350ccbac233da1c1c", sn: nil, brand: nil, inbox: nil, scale: nil, dateval: nil, sellprice: nil, selldate: nil},
