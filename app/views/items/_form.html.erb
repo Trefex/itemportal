@@ -1,3 +1,48 @@
+<%#
+    add_column :items, :sn, :string
+    add_column :items, :brand, :string
+    add_column :items, :inbox, :boolean
+    add_column :items, :scale, :string
+    add_column :items, :dateval, :decimal
+    add_column :items, :sellprice, :decimal
+    add_column :items, :selldata, :datetime
+%>
+
+<%#
+<div class="container">
+  <h2>Log in</h2>
+
+<div class="row">
+  <div class="form-group col-lg-4 col-md-4">
+    <%= f.label :email ><br />
+    <%= f.email_field :email, :class => "form-control", :placeholder => "Enter e-mail", autofocus: true  >
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group col-lg-4 col-md-4">
+    <%= f.label :password ><br />
+    <%= f.password_field :password, :class => "form-control", :placeholder => "Enter password", autocomplete: "off" >
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-lg-4 col-md-4">
+    <% if devise_mapping.rememberable? ->
+      <label>
+              <%= f.check_box :remember_me >
+              <%= f.label :remember_me >
+            </label>
+      <% end ->
+      <div class="actions">
+        <%= f.submit "Log in", :class => "btn btn-default" >
+      </div>
+    <% end >
+  </div>
+</div>
+<%= render "devise/shared/links" >
+</div>
+
+%>
 
 <%= form_for @item, :html => { :multipart => true } do |f| %>
 
@@ -14,6 +59,19 @@
       </ul>
     </div>
   <% end %>
+
+
+  <div class="row">
+    <div class="form-group col-lg-4 col-md-4">
+      <%= f.label :serial %><br />
+      <%= f.text_field :sn, :class => "form-control", :placeholder => "S/N"  %>
+    </div>
+    <div class="form-group col-lg-4 col-md-4">
+      <%= f.label :brand %><br />
+      <%= f.text_field :brand, :class => "form-control", :placeholder => "Marque"  %>
+    </div>
+  </div>
+
 
   <p>
     <%= f.label :title %><br>
