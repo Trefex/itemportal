@@ -86,3 +86,12 @@ gem 'seed_dump'
 # Exec JS and associated runtime
 gem 'execjs'
 gem 'therubyracer'
+
+# Style Upload form
+gem 'bootstrap-filestyle-rails'
+
+# File upload Dropzone.js
+# gem 'dropzonejs-rails'
+
+# Allow jquery events with turbolinks
+gem 'jquery-turbolinks'

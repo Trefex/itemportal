@@ -47,3 +47,6 @@ solr/development
 solr/default/data
 /log/*.log.lck
 solr/pids
+
+
+public/system/items/trainimages/*
