@@ -117,6 +117,30 @@ sudo bash ./install_solr_service.sh solr-5.1.0.tgz
   * Created a new core through web portal with settings: default, default, default/data, solrconfig.xml, schema.xml
   * Changed in schema.xml to remove deprecated datatypes as seen here https://groups.google.com/forum/?fromgroups#!topic/ruby-sunspot/hL4-0NqNnqA
 
+* Re-index solr indexes
+
+  ```
+  bundle exec rake sunspot:reindex RAILS_ENV="production"
+  ```
+
+* Re-generate thumbnails
+
+  ```
+  rake paperclip:refresh:missing_styles && rake paperclip:refresh CLASS=Item RAILS_ENV="production"
+  ```
+
+*  Recompile assets
+
+  ```
+  rake assets:precompile RAILS_ENV="production"
+  ```
+
+  Migrate database
+
+  ```
+  rake db:setup RAILS_ENV="production"
+  ```
+
 
 ## License
 
