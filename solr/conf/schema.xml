@@ -84,28 +84,17 @@
     </fieldtype>
 
     <!-- *** This fieldType is used by Sunspot! *** -->
-   <fieldType name="date" class="solr.TrieDateField" omitNorms="true"/>
-   <!-- *** This fieldType is used by Sunspot! *** -->
-   <fieldType name="sdouble" class="solr.TrieDoubleField" omitNorms="true"/>
-   <!-- *** This fieldType is used by Sunspot! *** -->
-   <fieldType name="sfloat" class="solr.TrieFloatField" omitNorms="true"/>
-   <!-- *** This fieldType is used by Sunspot! *** -->
-   <fieldType name="sint" class="solr.TrieIntField" omitNorms="true"/>
-   <!-- *** This fieldType is used by Sunspot! *** -->
-   <fieldType name="slong" class="solr.TrieLongField" omitNorms="true"/>
-
+    <fieldType name="date" class="solr.TrieDateField" omitNorms="true"/>
+    <!-- *** This fieldType is used by Sunspot! *** -->
+    <fieldType name="sdouble" class="solr.TrieDoubleField" omitNorms="true"/>
+    <!-- *** This fieldType is used by Sunspot! *** -->
+    <fieldType name="sfloat" class="solr.TrieFloatField" omitNorms="true"/>
+    <!-- *** This fieldType is used by Sunspot! *** -->
+    <fieldType name="sint" class="solr.TrieIntField" omitNorms="true"/>
+    <!-- *** This fieldType is used by Sunspot! *** -->
+    <fieldType name="slong" class="solr.TrieLongField" omitNorms="true"/>
     <!-- *** This fieldType is used by Sunspot! *** -->
     <fieldType name="boolean" class="solr.BoolField" omitNorms="true"/>
-    <!-- *** This fieldType is used by Sunspot! *** -->
-    <!-- <fieldType name="date" class="solr.DateField" omitNorms="true"/> -->
-    <!-- *** This fieldType is used by Sunspot! *** -->
-    <!--  <fieldType name="sdouble" class="solr.SortableDoubleField" omitNorms="true"/> -->
-    <!-- *** This fieldType is used by Sunspot! *** -->
-    <!--  <fieldType name="sfloat" class="solr.SortableFloatField" omitNorms="true"/> -->
-    <!-- *** This fieldType is used by Sunspot! *** -->
-    <!--  <fieldType name="sint" class="solr.SortableIntField" omitNorms="true"/> -->
-    <!-- *** This fieldType is used by Sunspot! *** -->
-    <!--  <fieldType name="slong" class="solr.SortableLongField" omitNorms="true"/> -->
     <!-- *** This fieldType is used by Sunspot! *** -->
     <fieldType name="tint" class="solr.TrieIntField" omitNorms="true"/>
     <!-- *** This fieldType is used by Sunspot! *** -->
@@ -113,8 +102,6 @@
     <!-- *** This fieldType is used by Sunspot! *** -->
     <fieldType name="tdate" class="solr.TrieDateField"
                omitNorms="true"/>
-
-
 
     <!-- Special field type for spell correction. Be careful about
          adding filters here, as they apply *before* your values go in
