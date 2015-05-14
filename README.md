@@ -110,6 +110,14 @@ ls
 sudo bash ./install_solr_service.sh solr-5.1.0.tgz
 ```
 
+* Configure solr
+
+  * Created core `default/conf` folder in `/var/solr/data` to hold core configuration
+  * Added sunspot custom schema.xml to `default/conf` and used `solrconfig.xml` from examples section as sunspot one was too old.
+  * Created a new core through web portal with settings: default, default, default/data, solrconfig.xml, schema.xml
+  * Changed in schema.xml to remove deprecated datatypes as seen here https://groups.google.com/forum/?fromgroups#!topic/ruby-sunspot/hL4-0NqNnqA
+
+
 ## License
 
 This code is release under GPL license. Please see the licnese file attached to this repository.
