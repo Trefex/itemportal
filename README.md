@@ -43,7 +43,7 @@ bundle exec rake sunspot:solr:start
 
 to start it in the background.
 
-The admin portal can be found at: `http://localhost:8982/solr/#/``
+The admin portal can be found at: `http://localhost:8982/solr/#/`
 
 ## Managing commands
 
