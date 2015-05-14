@@ -82,3 +82,6 @@ gem 'lightbox2-rails'
 
 # Allow to create seed from existing DB
 gem 'seed_dump'
+
+# Exec JS
+gem 'execjs'
