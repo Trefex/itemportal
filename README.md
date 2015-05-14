@@ -147,7 +147,11 @@ sudo bash ./install_solr_service.sh solr-5.1.0.tgz
 [paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
 ```
 
-Go to ...
+On Debian, simply do
+
+```
+apt-get install imagemagick
+```
 
 ## License
 
