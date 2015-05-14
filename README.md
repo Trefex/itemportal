@@ -141,6 +141,13 @@ sudo bash ./install_solr_service.sh solr-5.1.0.tgz
   rake db:setup RAILS_ENV="production"
   ```
 
+* Needed to install ImageMagick on the server, due to the following error:
+
+```
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+```
+
+Go to ...
 
 ## License
 
