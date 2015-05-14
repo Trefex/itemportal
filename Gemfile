@@ -83,5 +83,6 @@ gem 'lightbox2-rails'
 # Allow to create seed from existing DB
 gem 'seed_dump'
 
-# Exec JS
+# Exec JS and associated runtime
 gem 'execjs'
+gem 'therubyracer'
