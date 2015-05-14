@@ -60,28 +60,35 @@
     </div>
   <% end %>
 
+  <div class="row">
+    <div class="form-group col-lg-4 col-md-4">
+      <%= f.label(:title, "Name") %>
+      <%= f.text_field :title, :class => "form-control", :placeholder => "Train name" %>
+    </div>
+    <div class="form-group col-lg-2 col-md-2">
+      <%= label(:item, :scale, "Scale factor") %>
+      <%= f.text_field :scale, :class => "form-control", :placeholder => "Scale"  %>
+    </div>
+  </div>
 
   <div class="row">
     <div class="form-group col-lg-4 col-md-4">
-      <%= f.label :serial %><br />
+      <%= f.label :serial %>
       <%= f.text_field :sn, :class => "form-control", :placeholder => "S/N"  %>
     </div>
     <div class="form-group col-lg-4 col-md-4">
-      <%= f.label :brand %><br />
+      <%= f.label :brand %>
       <%= f.text_field :brand, :class => "form-control", :placeholder => "Marque"  %>
     </div>
   </div>
 
 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
-
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
+  <div class="row">
+    <div class="form-group col-lg-4 col-md-4">
+      <%= f.label :description %>
+      <%= f.text_area :text, :class => "form-control", :placeholder => "Description" %>
+    </div>
+  </div>
 
   <p>
     <%= f.label :image %><br>
