@@ -77,6 +77,18 @@ rake db:migrate
 cap install
 ```
 
+  * Create db file to be shared amongst releases
+
+  ```bash
+  cd /home/localadmin/webapps/trains/shared/db/
+  touch production.sqlite3
+  ```
+
+  * Deploy application with `cap [stage] deploy`
+
+  ```bash
+  cap production deploy
+  ```
 
 # Production
 
