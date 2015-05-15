@@ -95,3 +95,12 @@ gem 'bootstrap-filestyle-rails'
 
 # Allow jquery events with turbolinks
 gem 'jquery-turbolinks'
+
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  #gem 'capistrano-rvm'
+  gem 'rvm1-capistrano3', :require => false
+end
+
+ruby '2.2.2'

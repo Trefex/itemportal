@@ -71,6 +71,13 @@ Migrate database
 rake db:migrate
 ```
 
+* Capistrano
+
+```
+cap install
+```
+
+
 # Production
 
 Install Phusion Passenger with Apache using the following guide:
