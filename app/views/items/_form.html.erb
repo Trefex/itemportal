@@ -33,6 +33,12 @@
       <%= label(:item, :scale, "Scale factor") %>
       <%= f.text_field :scale, :class => "form-control", :placeholder => "Scale"  %>
     </div>
+    <div class="form-group col-lg-2 col-md-2">
+      <%= label(:item, :inbox, "Original box?") %>
+      <div class="">
+      <%= f.check_box :inbox  %>
+    </div>
+    </div>
   </div>
 
   <div class="row">
