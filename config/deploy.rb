@@ -23,7 +23,7 @@ set :scm, :git
 
 #set :ssh_options, { :forward_agent => true, :port => 8022 }
 
-set :keep_releases, 5
+set :keep_releases, 10
 
 
 #default_run_options[:pty] = true
@@ -54,7 +54,15 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+
+set :rvm1_map_bins, %w{rake gem bundle ruby passenger-config /home/localadmin/.rvm/bin/rvmsudo}
+
+set :passenger_restart_with_sudo, true
+
 after "deploy:migrate", :custom_name
+after 'deploy:publishing', :restart_pass
+
+
 
 namespace :deploy do
 
@@ -69,6 +77,8 @@ namespace :deploy do
       execute "rake sunspot:reindex RAILS_ENV='production'", :shell => fetch(:rvm_shell)
     end
   end
+
+
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
