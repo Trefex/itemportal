@@ -24,6 +24,26 @@
     </div>
   <% end %>
 
+<div class="row">
+  <div class="form-group col-lg-1 col-md-1">
+    <%= f.label(:title, "ID") %>
+    <% if @item.id.nil? %>
+      <%= content_tag(:p, "auto", :class => "form-control-static") %>
+    <% else %>
+      <%= content_tag(:p, @item.id, :class => "form-control-static") %>
+    <% end %>
+  </div>
+
+  <div class="form-group col-lg-3 col-md-3">
+    <%= f.label(:title, "Last updated") %>
+    <% if @item.id.nil? %>
+      <%= content_tag(:p, "auto", :class => "form-control-static") %>
+    <% else %>
+      <%= content_tag(:p, @item.updated_at, :class => "form-control-static") %>
+    <% end %>
+  </div>
+</div>
+
   <div class="row">
     <div class="form-group col-lg-4 col-md-4 required">
       <%= f.label(:title, "Name", :class => "control-label") %>
