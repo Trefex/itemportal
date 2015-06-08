@@ -25,7 +25,7 @@
   <% end %>
 
 <div class="row">
-  <div class="form-group col-lg-1 col-md-1">
+  <div class="form-group col-lg-2 col-md-2">
     <%= f.label(:title, "ID") %>
     <% if @item.id.nil? %>
       <%= content_tag(:p, "auto", :class => "form-control-static") %>
@@ -34,7 +34,7 @@
     <% end %>
   </div>
 
-  <div class="form-group col-lg-3 col-md-3">
+  <div class="form-group col-lg-3 col-md-4">
     <%= f.label(:title, "Last updated") %>
     <% if @item.id.nil? %>
       <%= content_tag(:p, "auto", :class => "form-control-static") %>
@@ -73,12 +73,19 @@
 </div>
 
 <div class="row">
+  <!-- <div class="form-group col-lg-4 col-md-4">
+    <h4>Date-Valeur </h4>
+  </div> -->
+</div>
+<div class="row">
+  <div class="form-group col-lg-4 col-md-4" id="datepicker">
+
+    <%= f.label(:title, "Date-Value Date") %>
+    <%= f.text_field :dateval_date, :value => format_date(@item.dateval_date), :class => "form-control", "data-provide" => "datepicker" %>
+  </div>
   <div class="form-group col-lg-4 col-md-4">
-    <h4>
-      Date-Valeur
-    </h4>
-    <%= f.label(:title, "Date") %>
-    <input type="text" class="form-control" id="" placeholder="">
+    <%= f.label(:title, "Date-Value Value (€)") %>
+    <%= f.text_field :dateval, :class => "form-control" %>
   </div>
 </div>
 
@@ -86,12 +93,11 @@
   <div class="row">
     <div class="form-group col-lg-4 col-md-4" id="datepicker">
       <%= f.label(:title, "Sell Date") %>
-      <%= f.text_field :selldate, :class => "form-control", "data-provide" => "datepicker" %>
+      <%= f.text_field :selldate, :value => format_date(@item.selldate), :class => "form-control", "data-provide" => "datepicker" %>
     </div>
     <div class="form-group col-lg-4 col-md-4">
       <%= f.label(:title, "Sell Price (€)") %>
       <%= f.text_field :sellprice, :class =>"form-control" %>
-      <p class="help-block">Use a dot for decimals</p>
     </div>
   </div>
 <% end %>

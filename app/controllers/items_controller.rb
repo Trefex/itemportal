@@ -21,7 +21,6 @@ class ItemsController < ApplicationController
 
   def edit
     @item = Item.find(params[:id])
-    @item.selldate = @item.selldate.to_formatted_s(:ddmmyyyy_trains)
   end
 
   # Create action
@@ -73,7 +72,7 @@ class ItemsController < ApplicationController
 
   private
     def item_params
-      params.require(:item).permit(:title, :text, :trainimage, :scale, :inbox, :sn, :brand, :sellprice, :selldate, :dateval_date)
+      params.require(:item).permit(:title, :text, :trainimage, :scale, :inbox, :sn, :brand, :sellprice, :selldate, :dateval_date, :dateval)
   end
 
 end

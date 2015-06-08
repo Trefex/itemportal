@@ -2,3 +2,19 @@
   content:"*";
   color:red;
 }
+
+body {
+  padding-bottom: 50px;
+}
+
+.navbar {
+  margin-bottom: 0px !important;
+}
+
+h2 {
+  margin-top: 20px !important;
+  margin-bottom: 0px !important;
+}
+.img-responsive {
+  margin-bottom: 20px !important;
+}
