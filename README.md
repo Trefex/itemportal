@@ -1,5 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/Trefex/trainsportal/badges/gpa.svg)](https://codeclimate.com/github/Trefex/trainsportal)
 [![Build Status](https://travis-ci.org/Trefex/trainsportal.svg)](https://travis-ci.org/Trefex/trainsportal)
+[![security](https://hakiri.io/github/Trefex/trainsportal/master.svg)](https://hakiri.io/github/Trefex/trainsportal/master)
 
 
 # Train portal
@@ -89,6 +90,15 @@ cap install
   ```bash
   cap production deploy
   ```
+
+# Custom CSS for the application
+
+* To make an input a date picker, embed it in a div with `id="datepicker"` and give the input
+element the `data-provide="datepicker"` attribute.  
+
+* To make a field required, add the `required` class to the container and the `control-label` class to the label itself
+
+* <%= `.to_formatted_s(:ddmmyyyy_trains)` will make the date string be formatted as `'6-Jun-2015'` for example 
 
 # Production
 

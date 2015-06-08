@@ -105,3 +105,6 @@ group :development do
 end
 
 ruby '2.2.2'
+
+# Date picker gem
+gem 'bootstrap-datepicker-rails'

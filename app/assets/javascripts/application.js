@@ -20,3 +20,4 @@
 //= require lightbox
 //= require bootstrap-filestyle
 // require dropzone
+//= require bootstrap-datepicker

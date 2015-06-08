@@ -9,7 +9,7 @@
       <td class="col-md-3">
         <%= link_to image_tag(item.trainimage.url(:thumb)),
                       item.trainimage.url(:original),
-                      {"data-lightbox" => item.trainimage.exists? ? item.trainimage_file_name : "Default image", 
+                      {"data-lightbox" => item.trainimage.exists? ? item.trainimage_file_name : "Default image",
                         "data-title" => item.title} %>
       </td>
       <td class="col-md-3"><%= item.title %></td>

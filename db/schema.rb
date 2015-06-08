@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150607102754) do
+ActiveRecord::Schema.define(version: 20150607122811) do
 
   create_table "items", force: :cascade do |t|
     t.string   "title"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20150607102754) do
     t.string   "scale"
     t.decimal  "dateval"
     t.decimal  "sellprice"
-    t.datetime "selldate"
+    t.date     "selldate"
     t.datetime "dateval_date"
   end
 

@@ -44,44 +44,68 @@
   </div>
 </div>
 
-  <div class="row">
-    <div class="form-group col-lg-4 col-md-4 required">
-      <%= f.label(:title, "Name", :class => "control-label") %>
-      <%= f.text_field :title, :class => "form-control", :placeholder => "Train name" %>
-    </div>
-    <div class="form-group col-lg-2 col-md-2">
-      <%= label(:item, :scale, "Scale factor") %>
-      <%= f.text_field :scale, :class => "form-control", :placeholder => "Scale"  %>
-    </div>
-    <div class="form-group col-lg-2 col-md-2">
-      <%= label(:item, :inbox, "Original box?") %>
-      <div class="">
-      <%= f.check_box :inbox  %>
-    </div>
-    </div>
+<div class="row">
+  <div class="form-group col-lg-4 col-md-4 required">
+    <%= f.label(:title, "Name", :class => "control-label") %>
+    <%= f.text_field :title, :class => "form-control", :placeholder => "Train name" %>
   </div>
+  <div class="form-group col-lg-2 col-md-2">
+    <%= label(:item, :scale, "Scale factor") %>
+    <%= f.text_field :scale, :class => "form-control", :placeholder => "Scale"  %>
+  </div>
+  <div class="form-group col-lg-2 col-md-2">
+    <%= label(:item, :inbox, "Original box?") %>
+    <div class="">
+    <%= f.check_box :inbox  %>
+  </div>
+  </div>
+</div>
 
-  <div class="row">
-    <div class="form-group col-lg-4 col-md-4">
-      <%= f.label :serial %>
-      <%= f.text_field :sn, :class => "form-control", :placeholder => "S/N"  %>
-    </div>
-    <div class="form-group col-lg-4 col-md-4">
-      <%= f.label :brand %>
-      <%= f.text_field :brand, :class => "form-control", :placeholder => "Marque"  %>
-    </div>
+<div class="row">
+  <div class="form-group col-lg-4 col-md-4">
+    <%= f.label :serial %>
+    <%= f.text_field :sn, :class => "form-control", :placeholder => "S/N"  %>
   </div>
+  <div class="form-group col-lg-4 col-md-4">
+    <%= f.label :brand %>
+    <%= f.text_field :brand, :class => "form-control", :placeholder => "Marque"  %>
+  </div>
+</div>
 
+<div class="row">
+  <div class="form-group col-lg-4 col-md-4">
+    <h4>
+      Date-Valeur
+    </h4>
+    <%= f.label(:title, "Date") %>
+    <input type="text" class="form-control" id="" placeholder="">
+  </div>
+</div>
+
+<% if user_signed_in? %>
   <div class="row">
-    <div class="form-group col-lg-4 col-md-4">
-      <%= f.label :description %>
-      <%= f.text_area :text, :class => "form-control", :placeholder => "Description" %>
+    <div class="form-group col-lg-4 col-md-4" id="datepicker">
+      <%= f.label(:title, "Sell Date") %>
+      <%= f.text_field :selldate, :class => "form-control", "data-provide" => "datepicker" %>
     </div>
     <div class="form-group col-lg-4 col-md-4">
-      <%= f.label :image %>
-      <%= f.file_field :trainimage, :class => "filestyle", "data-icon" => true %>
+      <%= f.label(:title, "Sell Price (€)") %>
+      <%= f.text_field :sellprice, :class =>"form-control" %>
+      <p class="help-block">Use a dot for decimals</p>
     </div>
   </div>
+<% end %>
+
+<div class="row">
+  <div class="form-group col-lg-4 col-md-4">
+    <%= f.label :description %>
+    <%= f.text_area :text, :class => "form-control", :placeholder => "Description" %>
+  </div>
+  <div class="form-group col-lg-4 col-md-4">
+    <%= f.label :image %>
+    <%= f.file_field :trainimage, :class => "filestyle", "data-icon" => true %>
+  </div>
+</div>
 
   <p>
     <%= f.submit class: "btn btn-success  " %>
