@@ -54,26 +54,28 @@
     </div>
     <div class="row">
     </div>
-    <div class="row">
-      <div class="form-group col-lg-4 col-md-4" id="datepicker">
-        <%= label(:title, "Date-Vale Date") %>
-        <%= content_tag(:p, @item.dateval_date, :class => "form-control-static") %>
+    <% if user_signed_in? %>
+      <div class="row">
+        <div class="form-group col-lg-4 col-md-4" id="datepicker">
+          <%= label(:title, "Date-Vale Date") %>
+          <%= content_tag(:p, @item.dateval_date, :class => "form-control-static") %>
+        </div>
+        <div class="form-group col-lg-4 col-md-4">
+          <%= label(:title, "Date-Value Value (€)") %>
+          <%= content_tag(:p, @item.dateval, :class => "form-control-static") %>
+        </div>
       </div>
-      <div class="form-group col-lg-4 col-md-4">
-        <%= label(:title, "Date-Value Value (€)") %>
-        <%= content_tag(:p, @item.dateval, :class => "form-control-static") %>
+      <div class="row">
+        <div class="form-group col-lg-4 col-md-4" id="datepicker">
+          <%= label(:title, "Sell Date") %>
+          <%= content_tag(:p, @item.selldate, :class => "form-control-static") %>
+        </div>
+        <div class="form-group col-lg-4 col-md-4">
+          <%= label(:title, "Sell Price (€)") %>
+          <%= content_tag(:p, @item.sellprice, :class => "form-control-static") %>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-lg-4 col-md-4" id="datepicker">
-        <%= label(:title, "Sell Date") %>
-        <%= content_tag(:p, @item.selldate, :class => "form-control-static") %>
-      </div>
-      <div class="form-group col-lg-4 col-md-4">
-        <%= label(:title, "Sell Price (€)") %>
-        <%= content_tag(:p, @item.sellprice, :class => "form-control-static") %>
-      </div>
-    </div>
+    <% end %>
     <div class="row">
       <div class="form-group col-lg-4 col-md-4">
         <%= label(:title, "Description") %>
@@ -83,5 +85,4 @@
       </div>
     </div>
   </div>
-
 </div>
