@@ -89,7 +89,6 @@
   </div>
 </div>
 
-<% if user_signed_in? %>
   <div class="row">
     <div class="form-group col-lg-4 col-md-4" id="datepicker">
       <%= f.label(:title, "Sell Date") %>
@@ -100,7 +99,6 @@
       <%= f.text_field :sellprice, :class =>"form-control" %>
     </div>
   </div>
-<% end %>
 
 <div class="row">
   <div class="form-group col-lg-4 col-md-4">
