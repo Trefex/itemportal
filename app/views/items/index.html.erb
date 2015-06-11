@@ -3,28 +3,48 @@
 </div>
 <p></p>
 
+<div class="table-responsive">
 <table class="table">
+  <tr>
+    <th>
+      
+    </th>
+    <th>
+      Title
+    </th>
+    <th>
+      Serial
+    </th>
+    <th>
+      Brand
+    </th>
+    <th>
+      Scale
+    </th>
+  </tr>
   <% @items.each do |item| %>
     <tr>
-      <td class="col-md-3">
+      <td class="col-md-2">
         <%= link_to image_tag(item.trainimage.url(:thumb)),
                       item.trainimage.url(:original),
                       {"data-lightbox" => item.trainimage.exists? ? item.trainimage_file_name : "Default image",
                         "data-title" => item.title} %>
       </td>
-      <td class="col-md-3"><%= item.title %></td>
-      <td class="col-md-3"><%= item.text %></td>
-      <td class="col-md-1"><%= link_to (fa_icon "eye"), item_path(item) %></td>
-      <td class="col-md-1"><%= link_to (fa_icon "pencil"), edit_item_path(item) %></td>
+      <td class="col-md-2"><%= item.title %></td>
+      <td class="col-md-2"><%= item.sn %></td>
+      <td class="col-md-2"><%= item.brand %></td>
+      <td class="col-md-2"><%= item.scale %></td>
       <td class="col-md-1">
-        <%= link_to (fa_icon "trash-o"),  item_path(item),
+        <%= link_to (fa_icon "eye"), item_path(item) %> &nbsp;
+        <%= link_to (fa_icon "pencil", :style => "color:#66CC99"), edit_item_path(item) %> &nbsp;
+        <%= link_to (fa_icon "trash-o", :style => "color:#CC3300"),  item_path(item),
               method: :delete,
               data: { confirm: 'Are you sure?' } %>
       </td>
     </tr>
   <% end %>
 </table>
-
+</div>
 <div class="text-center">
 <%= paginate @items %> <br/>
 

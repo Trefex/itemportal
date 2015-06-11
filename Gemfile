@@ -108,3 +108,9 @@ ruby '2.2.2'
 
 # Date picker gem
 gem 'bootstrap-datepicker-rails'
+
+gem 'ruby-beautify'
+
+gem 'htmlbeautifier'
+
+#gem 'footable-rails'
