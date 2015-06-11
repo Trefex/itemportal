@@ -70,6 +70,14 @@ class ItemsController < ApplicationController
     # end
   end
 
+  def avatar
+    @item = Item.find(params[:id])
+    @item.trainimage = nil
+    @item.save
+
+    render 'edit'
+end
+
   private
     def item_params
       params.require(:item).permit(:title, :text, :trainimage, :scale, :inbox, :sn, :brand, :sellprice, :selldate, :dateval_date, :dateval)
